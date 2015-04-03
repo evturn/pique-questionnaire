@@ -9,23 +9,37 @@ new WOW(
 
 var questionnaire = [
 	{
-		question: '',
+		question: 'How important is the proximity of team members to you?',
 		id: 1,
 		options: [
-
+			'No important',
+			'Important'
 		]
 	},
 	{
 		question: '',
 		id: 2,
 		options: [
-
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			''
 		]
 	},
 	{
 		question: '',
 		id: 3,
 		options: [
+			'',
+			'',
+			'',
+			'',
+			''
 
 		]
 	},
@@ -33,7 +47,12 @@ var questionnaire = [
 		question: '',
 		id: 4,
 		options: [
-
+			'',
+			'',
+			'',
+			'',
+			'',
+			''
 		]
 	}
 ];
