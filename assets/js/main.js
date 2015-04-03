@@ -32,14 +32,14 @@ var questionnaire = [
 		]
 	},
 	{
-		question: '',
+		question: 'What brings you on?',
 		id: 3,
 		options: [
-			'',
-			'',
-			'',
-			'',
-			''
+			'Networking',
+			'Build Portfolio',
+			'Building MVP',
+			'Improve Skills',
+			'Love Building Cool Things'
 
 		]
 	},
