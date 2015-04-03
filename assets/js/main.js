@@ -44,15 +44,15 @@ var questionnaire = [
 		]
 	},
 	{
-		question: '',
+		question: 'What type of users are you interested in collaborating with?',
 		id: 4,
 		options: [
-			'',
-			'',
-			'',
-			'',
-			'',
-			''
+			'Designers',
+			'Developers',
+			'Project Managers',
+			'Marketers',
+			'Biz Dev',
+			'Anyone with Strong Work Ethic'
 		]
 	}
 ];
