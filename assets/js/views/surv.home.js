@@ -13,9 +13,8 @@ surv.Home = Backbone.View.extend({
 		return this;
 	},
 	register: function() {
-		$('#view').empty();
+		$('#questionnaire').empty();
 		this.$el.html(this.registerTemplate());
 		return this;
 	},
-
 });

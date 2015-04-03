@@ -66,14 +66,12 @@
 	</script>
 
 	<script type="text/template" id="question-template">
-
 		
-			<div class="container" id="<%= id %>">
+			<div class="container" id="section-<%= id %>">
 				<div class="row text-center">
 					<p class="title sub"><%= header %></p>
 					<h2><%= question %></h2>
 
-					
 					<% for (var i = 0; i < options.length; i++) { %>
 					<%	var option = options[i]; %>
 					<div class="col-xs-4 col-sm-4 text center question">

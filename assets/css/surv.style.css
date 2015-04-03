@@ -6,7 +6,7 @@ h3 {
 	height: 100vh;
 }
 
-section {
+#section-1, #section-2, #section-3, #section-4, {
 	height: 100vh;	
 }
 
