@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Pique</title>
+	<title>Pique | Questionnaire</title>
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/lib/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/lib/bootstrap-theme.css">
 	<link rel="stylesheet" href="assets/css/lib/animate.css">
@@ -20,7 +21,7 @@
 
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 text-center">
-				<h4>PIQUE</h4>
+				<img src="assets/img/logo.png">
 				<h1>A social way to professionally network.</h1>
 			</div>
 		</div>
@@ -52,81 +53,22 @@
 	</div>
 
 
-	<script type="text/template" id="register-template">
-
-		<div class="container wow bounceInUp" id="register-form">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-	      	<a type="button" class="close"><i class="fa fa-times fa-2x"></i></a>
-	        <h3 class="section-title">Register</h3>
-	      </div>
-	      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-		      <form class="form-horizontal" role="form"> 
-		      <div class="form-group">
-		          <label>First And Last Name</label>
-		          <input type="text" class="form-control" name="name" id="name" placeholder="Steve Johnson">
-		        </div> 
-		        <div class="form-group">
-		          <label>Email</label>
-		          <input type="email" class="form-control" name="email" id="email" placeholder="steverulez@gmail.com">
-		        </div>
-		        <div class="form-group">
-		          <label>Position</label>
-		          <input type="text" class="form-control" name="position" id="position" placeholder="Be a beta tester">
-		        </div>
-		        <div class="form-group">
-		          <button type="submit" id="register-btn" class="btn btn-default btn-lg">REGISTER</button>
-		        </div>
-		      </form>
-		     </div>
-      </div>
-    </div>
-	</script>
-
-
-	<script type="text/template" id="nav-template">
-		<div class="container-fluid">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" id="root" href="#">Pique</a>
-	    </div>
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li class="active"><a id="register" href="#">Register <span class="sr-only">(current)</span></a></li>
-	        <li><a  id="survey" href="#">Survey</a></li>
-	      </ul>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Picture of My Breakfast</a></li>
-				</ul> 
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	 </script>
-
-
+	
 	<script type="text/template" id="survey-header-template">
 		<div class="container wow bounceInUp">
 			<div class="row">
 				<div class="col-xs-12 col-sm-4 col-sm-offset-1 text-center">
-					<h2>I want to work on a project</h2>
-					<button class="btn btn-default">GET STARTED</button>
+					<h3>I want to work on a project</h3>
+					<button class="btn btn-primary" id="work-btn">GET STARTED</button>
 				</div>
 				
 				<div class="col-xs-12 col-sm-4 col-sm-offset-2 text-center">
-					<h2>I have an idea + want to build it!</h2>
-					<button class="btn btn-default">GET STARTED</button>
+					<h3>I have an idea + want to build it!</h3>
+					<button class="btn btn-primary" id="idea-btn">GET STARTED</button>
 				</div>
 			</div>
 		</div>
 	</script>
-
-
-
-
 
 	<script type="text/template" id="survey-body-template">
 
@@ -192,10 +134,62 @@
 			</div>
 		</div>
 	</section>
-
 	</script>
 
 
+<script type="text/template" id="register-template">
+
+		<div class="container wow bounceInUp" id="register-form">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+	      	<a type="button" class="close"><i class="fa fa-times fa-2x"></i></a>
+	        <h3 class="section-title">Register</h3>
+	      </div>
+	      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+		      <form class="form-horizontal" role="form"> 
+		      <div class="form-group">
+		          <label>First And Last Name</label>
+		          <input type="text" class="form-control" name="name" id="name" placeholder="Steve Johnson">
+		        </div> 
+		        <div class="form-group">
+		          <label>Email</label>
+		          <input type="email" class="form-control" name="email" id="email" placeholder="steverulez@gmail.com">
+		        </div>
+		        <div class="form-group">
+		          <label>Position</label>
+		          <input type="text" class="form-control" name="position" id="position" placeholder="Be a beta tester">
+		        </div>
+		        <div class="form-group">
+		          <button type="submit" id="register-btn" class="btn btn-default btn-lg">REGISTER</button>
+		        </div>
+		      </form>
+		     </div>
+      </div>
+    </div>
+	</script>
+
+	<script type="text/template" id="nav-template">
+		<div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" id="root" href="#">Pique</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a id="register" href="#">Register <span class="sr-only">(current)</span></a></li>
+	        <li><a  id="survey" href="#">Survey</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">Picture of My Breakfast</a></li>
+				</ul> 
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	 </script>
 
 
 	<script src="assets/js/lib/jquery.js"></script>
