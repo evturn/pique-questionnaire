@@ -25,23 +25,20 @@
 				<h1>A social way to professionally network.</h1>
 			</div>
 		</div>
-	
 		<div id="header">
 		
-			<!-- SURVEY HEADER INJECTION -->
-
-			<!-- REGISTER FORM INJECTION -->
+			<!-- SURVEY HOME -->
 
 		</div>
 
 	</div><!-- end home -->
 
 
-		<div id="view">
+		<div id="questionnaire">
 			
-			<!-- SURVEY INJECTION -->
+			<!-- QUESTIONS -->
 
-		</div>
+		</div><!-- end questions -->
 
 
 	<div class="container" id="footer">
@@ -50,7 +47,7 @@
 				<p class="title footer">© Pique 2015. All Rights Reserved</p>
 			</div>
 		</div>
-	</div>
+	</div><!-- end footer -->
 
 	<script type="text/template" id="survey-home-template">
 		<div class="container wow bounceInUp">
@@ -70,26 +67,23 @@
 
 	<script type="text/template" id="question-template">
 
-		<section id="section-1">
-			<div class="container">
+		
+			<div class="container" id="<%= id %>">
 				<div class="row text-center">
-					<p class="title sub">Question 1 of 4</p>
-					<h2>What is your role?</h2>
-					<div class="col-xs-4 col-sm-4 question">
-						<h4>Option</h4>
-						<p>Here is an option.</h5>
+					<p class="title sub"><%= header %></p>
+					<h2><%= question %></h2>
+
+					
+					<% for (var i = 0; i < options.length; i++) { %>
+					<%	var option = options[i]; %>
+					<div class="col-xs-4 col-sm-4 text center question">
+						<h2><%= option %></h2>
 					</div>
-					<div class="col-xs-4 col-sm-4 question">
-						<h4>Option</h4>
-						<h5>Here is an option.</h5>
-					</div>
-					<div class="col-xs-4 col-sm-4 question">
-						<h4>Option</h4>
-						<h5>Here is an option.</h5>
-					</div>
+					<% }; %>
+
 				</div>
 			</div>
-		</section>
+		
 
 	</script>
 

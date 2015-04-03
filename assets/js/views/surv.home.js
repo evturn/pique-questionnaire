@@ -8,7 +8,7 @@ surv.Home = Backbone.View.extend({
 		this.survey();
 	},
 	survey: function() {
-		var survey = new surv.Survey();
+		var survey = new surv.Survey({collection: questions});
 		this.$el.html(this.surveyHeaderTemplate());
 		return this;
 	},

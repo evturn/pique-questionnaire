@@ -1,13 +1,14 @@
 var surv = surv || {};
 
 surv.Survey = Backbone.View.extend({
-	el: '#view',
+	el: '#questionnaire',
 	surveyTemplate: _.template($('#question-template').html()),
 	initialize: function() {
 		this.render();
 	},
 	render: function() {
-		this.$el.html(this.surveyTemplate());
-		return this;
+		this.collection.each(function(model) {
+			this.$el.html(this.surveyTemplate(model.toJSON()));
+		}.bind(this));
 	},
 });
