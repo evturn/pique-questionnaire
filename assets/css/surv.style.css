@@ -2,6 +2,10 @@ h3 {
   font-family: 'Nunito', sans-serif;
 }
 
+h2 {
+  padding-bottom: 40px;
+}
+
 #home {
 	height: 100vh;
 }
@@ -10,8 +14,13 @@ h3 {
 	height: 100vh;	
 }
 
+ul#questions-list li {
+  display: inline-block;
+}
+
 .question {	
-	height: 250px;
+	height: 200px;
+  width: 200px;
 	border: 1px solid #a3a3a3;
 	border-radius: 5%;
 }
@@ -26,13 +35,11 @@ button#work-btn, button#idea-btn {
 	margin-top: 100px;
   padding: 50px 0;
   font-size: 16px;
-  color: #0b0b0b;
   font-weight: 500;
   letter-spacing: 0.4px;
   text-align: center;
   position: relative;
   display: block;
-  border-top: 1px solid #ccc;
 }
 
 #footer {
