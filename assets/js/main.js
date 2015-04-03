@@ -17,18 +17,18 @@ var questionnaire = [
 		]
 	},
 	{
-		question: '',
+		question: 'What type of projects are you interested in?',
 		id: 2,
 		options: [
-			'',
-			'',
-			'',
-			'',
-			'',
-			'',
-			'',
-			'',
-			''
+			'Mobile Apps',
+			'Web Apps',
+			'Social Good',
+			'Social Media',
+			'Networking',
+			'Fin Tech',
+			'Fashion',
+			'Food',
+			'Travel'
 		]
 	},
 	{
